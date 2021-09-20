@@ -1,12 +1,10 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
 export default class HomeServiceContent extends Component {
   render() {
     return (
       <div>
-        <Container>
+        <Container style={{marginTop:50}}>
           <Row xs={1} md={2}>
             <Col>
               <img

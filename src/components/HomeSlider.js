@@ -3,7 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 export default class HomeSlider extends Component {
   render() {
     return (
-      <div style={{marginBottom:50 }}>
+      <div style={{ marginBottom: 50, marginTop: 25 }}>
         <Carousel ariant='dark'>
           <Carousel.Item>
             <img
@@ -12,11 +12,11 @@ export default class HomeSlider extends Component {
               alt='First slide'
               fluid
             />
-            <Carousel.Caption>
+            <Carousel.Caption
+              style={{ fontSize: 30, marginBottom: 0, marginLeft: -700 }}
+            >
               <h1 style={{ color: 'white' }}>Road Service</h1>
-              <p style={{ color: 'white' }}>
-                Get help on the Road
-              </p>
+              <p style={{ color: 'white' }}>Get help on the Road</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
@@ -25,11 +25,11 @@ export default class HomeSlider extends Component {
               src='https://service-lux.fr/wp-content/uploads/2021/06/55-1.jpg'
               alt='Second slide'
             />
-            <Carousel.Caption>
+            <Carousel.Caption
+              style={{ fontSize: 30, marginBottom: 0, marginLeft: -700 }}
+            >
               <h1 style={{ color: 'white' }}>Home Service</h1>
-              <p style={{ color: 'white' }}>
-               Get help on your House
-              </p>
+              <p style={{ color: 'white' }}>Get help on your House</p>
             </Carousel.Caption>
           </Carousel.Item>
         </Carousel>

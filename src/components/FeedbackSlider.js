@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Col, Row } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image';
 export default class FeedbackSlider extends Component {
   constructor(props) {
     super(props);
@@ -10,18 +11,18 @@ export default class FeedbackSlider extends Component {
       <>
         {this.props.Feedbacks.length ? (
           <Row>
-            <Col md={{ span: 0, offset: 0 }}>
+            <Col md={{ span: 8, offset: 2 }}>
+              <h1 style={{ marginLeft: '15%' }}>Our Costumer Feedback</h1>
               <Carousel itemsToShow={this.props.Feedbacks.length}>
                 {this.props.Feedbacks.map((element) => {
                   return (
-                    <Carousel.Item interval={3000}>
-                      <img
+                    <Carousel.Item rounded interval={2000}>
+                      <Image
                         className='d-block w-100'
-                        src='https://img5.goodfon.com/original/1920x1080/b/c0/ploskii-krugi-temnyi-fon-shtrikhovka-goluboi-aktsent.jpg'
-                        alt='First slide'
-                        rounded
+                        src='https://p1.pxfuel.com/preview/867/465/196/grass-abstract-backdrop-background.jpg'
+                        alt='Feedbacks'
                       />
-                      <Carousel.Caption>
+                      <Carousel.Caption style={{marginBottom:90,fontSize:45}}>
                         <h3>{element.name}</h3>
                         <p>{element.feedback}</p>
                       </Carousel.Caption>
@@ -33,7 +34,9 @@ export default class FeedbackSlider extends Component {
           </Row>
         ) : (
           <div>
-            <h2 style={{ marginTop: 50 }}>Book Collection is Empty</h2>
+            <h2 style={{ marginTop: 50 }}>
+              There is no Feedback In the System
+            </h2>
           </div>
         )}
       </>

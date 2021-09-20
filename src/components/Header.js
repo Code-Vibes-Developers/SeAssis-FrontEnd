@@ -1,15 +1,18 @@
 import React, { Component } from 'react';
-import { Navbar } from 'react-bootstrap';
-import { Container } from 'react-bootstrap';
-import { NavDropdown } from 'react-bootstrap';
+import { Container, Navbar, NavDropdown } from 'react-bootstrap';
 export default class Header extends Component {
   render() {
     return (
       <div>
-        <Navbar bg='light' variant='light'>
+        <Navbar
+          fixed='top'
+          expand='lg'
+          style={{ fontSize: 25, height: 100, padding: 10 }}
+          bg='dark'
+          variant='dark'
+        >
           <Container>
             <Navbar.Brand href='/'>Home</Navbar.Brand>
-
             <NavDropdown title='Services' id='collasible-nav-dropdown'>
               <NavDropdown.Item href='/HomeServices'>
                 Home Services

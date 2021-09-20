@@ -1,58 +1,92 @@
 import React, { Component } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import { Row, Col, Container } from 'react-bootstrap';
+import { Form, Button } from 'react-bootstrap';
 export default class RoadServiceForm extends Component {
   render() {
-    // console.log(this.props);
     return (
-      <div>
-        <Form onSubmit={this.props.HandleCreateService}>
-          <Form.Group className='mb-3' controlId='formBasicEmail'>
-            <Form.Label>Name</Form.Label>
-            <Form.Control
-              type='text'
-              name='personName'
-              placeholder='Enter your name'
-            />
-            <Form.Text className='text-muted'></Form.Text>
-          </Form.Group>
+      <Container>
+        <Row>
+          <Col md={{ span: 8, offset: 2 }}>
+            <Form onSubmit={this.props.HandleCreateService}>
+              <Form.Group className='mb-3' controlId='formBasicEmail'>
+                <Form.Label style={{ fontSize: 25 }}>Name</Form.Label>
+                <Form.Control
+                  style={{
+                    marginLeft: 200,
+                    display: 'inline-block',
+                    height: 50,
+                    width: 400,
+                  }}
+                  type='text'
+                  placeholder='Enter your name'
+                  name='personName'
+                />
+              </Form.Group>
+              <Form.Group className='mb-3' controlId='formBasicPassword'>
+                <Button
+                  style={{ fontSize: 25, display: 'inline', height: 100 }}
+                  variant='primary'
+                  onClick={this.props.HandleLocation}
+                >
+                  Get Your Location !
+                </Button>
+                <Form.Control
+                  style={{
+                    marginLeft: 25,
+                    display: 'inline-block',
+                    height: 100,
+                    width: 400,
+                  }}
+                  type='text'
+                  placeholder='Add Location Information'
+                  name='personAddress'
+                />
+              </Form.Group>
+              <Form.Group className='mb-3' controlId='formBasicEmail'>
+                <Form.Label style={{ fontSize: 25 }}>Phone number</Form.Label>
 
-          <Form.Group className='mb-3' controlId='formBasicPassword'>
-            {/* <Form.Label>Adress</Form.Label> */}
-            <Button
-              variant='primary'
-              name='geo'
-              onClick={this.props.HandleLocation}
-            >
-              Get Your Location
-            </Button>
-            <Form.Control
-              type='text'
-              name='personAddress'
-              placeholder='Add description'
-            />
-          </Form.Group>
-          <Form.Group className='mb-3' controlId='formBasicCheckbox'>
-            <Form.Label>Mobile Number</Form.Label>
+                <Form.Control
+                  style={{
+                    marginLeft: 100,
+                    display: 'inline-block',
+                    height: 50,
+                    width: 400,
+                  }}
+                  type='number'
+                  placeholder='Enter phone number'
+                  name='personPhone'
+                />
+              </Form.Group>
+              <Form.Group className='mb-3' controlId='formBasicEmail'>
+                <Form.Label style={{ fontSize: 25 }}>
+                  Problem Description
+                </Form.Label>
 
-            <Form.Control type="number" name="personPhone" placeholder="Add Your Phone" />
-            <Form.Text className="text-muted"></Form.Text>
-
-          </Form.Group>
-          <Form.Group className='mb-3' controlId='formBasicCheckbox'>
-            <Form.Label>Problem Description</Form.Label>
-            <Form.Control
-              name="Description"
-              type="text"
-              placeholder="Add A Description To The Issue"
-            />
-            <Form.Text className='text-muted'></Form.Text>
-          </Form.Group>
-          <Button variant='primary' type='submit'>
-            Ask For Help
-          </Button>
-        </Form>
-      </div>
+                <Form.Control
+                  type='text'
+                  placeholder='Whats youre problem ?'
+                  name='Description'
+                  style={{
+                    marginLeft: 25,
+                    display: 'inline-block',
+                    height: 100,
+                    width: 400,
+                  }}
+                />
+              </Form.Group>
+              <Col md={{ span: 4, offset: 4 }}>
+                <Button
+                  style={{ fontSize: 25, display: 'inline', height: 100 }}
+                  variant='primary'
+                  type='submit'
+                >
+                  Ask for help !
+                </Button>
+              </Col>
+            </Form>
+          </Col>
+        </Row>
+      </Container>
     );
   }
 }

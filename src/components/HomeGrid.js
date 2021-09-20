@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-// const btn = document.querySelector('.btn-toggle');
-import Image from 'react-bootstrap/Image';
-// btn.addEventListener('click', function () {
-//   document.body.classList.toggle('dark-theme');
-// });
 import { Container, Col, Row } from 'react-bootstrap';
+import Image from 'react-bootstrap/Image';
 import '../HomeGrid.css';
 export default class HomeGrid extends Component {
   render() {
@@ -38,9 +34,8 @@ export default class HomeGrid extends Component {
                 <div class='content'>
                   <i class='fab fa-java'></i>
                   <Image
-
                     className='d-block w-100'
-                    style={{width:500}}
+                    style={{ width: 500 }}
                     src='https://bh-aws-media.s3-accelerate.amazonaws.com/2018/11/Miele_Housekeeping_2.jpg'
                     alt='RoadService'
                     fluid
@@ -50,8 +45,8 @@ export default class HomeGrid extends Component {
                   <p>
                     If you need a help in daily routine home tasks or if you
                     need to solve plumping electrical issues in your home we can
-                    help you by requesting us with five easy steps go ahead and requesting
-                    your order now.
+                    help you by requesting us with five easy steps go ahead and
+                    requesting your order now.
                   </p>
                   <a href='/HomeServices'>Read More</a>
                 </div>

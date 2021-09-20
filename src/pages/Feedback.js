@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
 import FeedbackSlider from '../components/FeedbackSlider';
-import '../HomeGrid.css';
 import FeedbackForm from '../components/FeedbackForm';
 import axios from 'axios';
+require('dotenv').config();
 export default class Feedback extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       Feedbacks: [],
     };
@@ -21,7 +20,7 @@ export default class Feedback extends Component {
       feedback: e.target.feedback.value,
     };
     axios
-      .post(`http://localhost:8081/feedback`, reqBody)
+      .post(`${process.env.REACT_APP_SERVER}/feedback`, reqBody)
       .then((creatFeedbackObject) => {
         this.state.Feedbacks.push(creatFeedbackObject.data);
         this.setState({ Feedbacks: this.state.Feedbacks });
@@ -32,7 +31,7 @@ export default class Feedback extends Component {
 
   componentDidMount = () => {
     axios
-      .get(`http://localhost:8081/feedback`)
+      .get(`${process.env.REACT_APP_SERVER}/feedback`)
 
       .then((FeedbacksResponse) => {
         this.setState({ Feedbacks: FeedbacksResponse.data });

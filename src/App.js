@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import Home from './pages/Home';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './pages/Home';
 import AboutUs from './pages/AboutUs';
@@ -8,7 +7,6 @@ import HomeServices from './pages/HomeServices';
 import RoadServices from './pages/RoadServices';
 import Requests from './pages/Requests';
 import { Row, Col, Container } from 'react-bootstrap';
-
 import Header from './components/Header';
 import Footer from './components/Footer';
 export default class App extends Component {

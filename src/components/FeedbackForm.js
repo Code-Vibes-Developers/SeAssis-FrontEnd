@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import Form from 'react-bootstrap/Form';
-import Button from 'react-bootstrap/Button';
+import { Form, Button } from 'react-bootstrap';
 import { Row, Col, Container } from 'react-bootstrap';
 export default class FeedbackForm extends Component {
   render() {
     return (
       <Container>
         <Row>
-          <Col md={{ span: 8, offset: 2 }}>
+          <Col md={{ span: 6, offset: 3 }}>
             <Form onSubmit={this.props.handelCreateFeedback}>
               <Form.Group className='mb-3'>
                 <Form.Label>Name</Form.Label>
                 <Form.Control name='name' placeholder='Enter Your Name' />
               </Form.Group>
-              <Form.Group className='mb-3' >
+              <Form.Group className='mb-3'>
                 <Form.Label>Email address</Form.Label>
                 <Form.Control
                   name='email'
@@ -46,9 +45,11 @@ export default class FeedbackForm extends Component {
                   placeholder='Enter Your Feedback'
                 />
               </Form.Group>
-              <Button variant='primary' type='submit'>
-                Submit
-              </Button>
+              <Col md={{ span: 10, offset: 3 }}>
+                <Button style={{fontSize:25, width:150,height:100}} variant='primary' type='submit'>
+                  Submit
+                </Button>
+              </Col>
             </Form>
           </Col>
         </Row>
