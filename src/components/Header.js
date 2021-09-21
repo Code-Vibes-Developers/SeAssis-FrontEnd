@@ -18,6 +18,7 @@ export default class Header extends Component {
                 Road Services
               </NavDropdown.Item>
             </NavDropdown>
+            <Navbar.Brand href='/Requests'>Requests</Navbar.Brand>
             <Navbar.Brand href='/Feedback'>Feedback</Navbar.Brand>
             <Navbar.Brand href='/AboutUs'>About Us</Navbar.Brand>
           </Container>
