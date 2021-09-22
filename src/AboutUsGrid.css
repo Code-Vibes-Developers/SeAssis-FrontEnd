@@ -4,66 +4,64 @@
   font-family: 'Righteous', cursive;
   padding: 5px;
   box-sizing: border-box;
-
 }
 
-.card1 {
+.card2 {
   position: relative;
-  width: 500px;
+  width: 400px;
   height: 600px;
 }
-.box1 {
+.box2 {
   position: absolute;
   top: 20px;
   right: 20px;
   bottom: 20px;
   left: 20px;
-  background: whitesmoke;
+  background: #ffffff;
   border-radius: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 1.5s;
 }
-.content1 {
+.content2 {
   padding: 20px;
   text-align: center;
 }
 
-.name1 {
-  font-size: 1.8em;
+.name2 {
+  font-size: 25px;
   color: #777;
   z-index: 1;
   transition: 1.5s;
 }
 
-.para1 {
+.para2 {
   font-size: 1em;
   color: #777;
   z-index: 1;
   transition: 1.5s;
 }
 
-.anker1 {
+.anker2 {
   position: relative;
   display: inline-block;
-  padding: 8px 20px;
+  padding: 20px 20px;
   background: #777;
   margin-top: 15px;
   border-radius: 20px;
-  color: #363636;
+  color: #ffffff;
   text-decoration: none;
 }
 
-.card1:hover .box1 {
+.card2:hover .box2 {
   transform: translateY(-50px);
-  background: linear-gradient(45deg, #ffff,whitesmoke);
+  background: linear-gradient(35deg, whitesmoke, #ffffff );
   border-radius: 15;
 }
 
-.box1 .content1 h3,
-.box1 .content1 p {
+.box2 .content2 h3,
+.box2 .content2 p {
   color: #363636;
   border-radius: 15;
 }
-

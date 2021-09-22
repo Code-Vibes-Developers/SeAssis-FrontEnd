@@ -4,10 +4,10 @@ import HomeSlider from '../components/HomeSlider';
 export default class Home extends Component {
   render() {
     return (
-      <div>
+      <>
         <HomeSlider />
         <HomeGrid />
-      </div>
+      </>
     );
   }
 }

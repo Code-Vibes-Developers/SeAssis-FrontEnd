@@ -7,27 +7,30 @@ import EhabImage from '../media/images/ehab.jpg';
 import JehadImage from '../media/images/jehad.jpg';
 import GharamImage from '../media/images/gharam.jpg';
 import AhmadImage from '../media/images/ahmad.jpg';
-
+import '../AboutUsGrid.css';
 export default class AboutUsGrid extends Component {
   render() {
     return (
       <div>
-        <Container>
+        <Container class='square border border-0'>
           <Row>
             <Col md={{ span: 4, offset: 0 }}>
-              <div class='card'>
-                <div class='box'>
-                  <div class='content'>
-                    <i class='fab fa-python'></i>
+              <div class='card2'>
+                <div class='box2'>
+                  <div style={{ width: 400 }} class='content2'>
                     <Image
                       className='d-block w-100'
                       src={JehadImage}
                       alt='RoadService'
                       fluid
+                      style={{ width: 500, height: 300 }}
                     />
-                    <h3>Team Leader</h3>
-                    <p>Jehad Abu Awwad</p>
-                    <a href='https://www.linkedin.com/in/jehadabuawwad/'>
+                    <h3 class='name2'>Team Leader</h3>
+                    <p class='name2'>Jehad Abu Awwad</p>
+                    <a
+                      class='anker2'
+                      href='https://www.linkedin.com/in/jehadabuawwad/'
+                    >
                       Profile
                     </a>
                   </div>
@@ -35,21 +38,22 @@ export default class AboutUsGrid extends Component {
               </div>
             </Col>
             <Col md={{ span: 4, offset: 0 }}>
-              <div class='card'>
-                <div class='box'>
-                  <div class='content'>
-                    <i class='fab fa-java'></i>
+              <div class='card2'>
+                <div class='box2'>
+                  <div style={{ width: 400 }} class='content2'>
                     <Image
                       className='d-block w-100'
-                      style={{ width: 500 }}
                       src={SamahImage}
                       alt='RoadService'
                       fluid
                       rounded
                     />
-                    <h3>First Member</h3>
-                    <p>Samah Hamed</p>
-                    <a href='https://www.linkedin.com/in/samah-hamed-948579171/'>
+                    <h3 class='name2'>First Member</h3>
+                    <p class='name2'>Samah Hamed</p>
+                    <a
+                      class='anker2'
+                      href='https://www.linkedin.com/in/samah-hamed-948579171/'
+                    >
                       Profile
                     </a>
                   </div>
@@ -57,43 +61,48 @@ export default class AboutUsGrid extends Component {
               </div>
             </Col>
             <Col md={{ span: 4, offset: 0 }}>
-              <div class='card'>
-                <div class='box'>
-                  <div class='content'>
-                    <i class='fab fa-java'></i>
+              <div class='card2'>
+                <div class='box2'>
+                  <div style={{ width: 400 }} class='content2'>
                     <Image
                       className='d-block w-100'
-                      style={{ width: 500 }}
                       src={IbrahemImage}
                       alt='RoadService'
                       fluid
                       rounded
                     />
-                    <h3>Second Member</h3>
-                    <p>Ibrahim Bader</p>
-                    <a href='https://www.linkedin.com/in/ibrahim-bader-35aa09164/'>
+                    <h3 class='name2'>Second Member</h3>
+                    <p class='name2'>Ibrahim Bader</p>
+                    <a
+                      class='anker2'
+                      href='https://www.linkedin.com/in/ibrahim-bader-35aa09164/'
+                    >
                       Profile
                     </a>
                   </div>
                 </div>
               </div>
             </Col>
+          </Row>
+
+          <Row>
             <Col md={{ span: 4, offset: 0 }}>
-              <div class='card'>
-                <div class='box'>
-                  <div class='content'>
-                    <i class='fab fa-java'></i>
+              <div class='card2'>
+                <div class='box2'>
+                  <div style={{ width: 400 }} class='content2'>
                     <Image
                       className='d-block w-100'
-                      style={{ width: 500 }}
                       src={EhabImage}
                       alt='RoadService'
                       fluid
                       rounded
                     />
-                    <h3>Third Member</h3>
-                    <p>Ehab Ahmad</p>
-                    <a href='https://www.linkedin.com/in/ehab-ahmad-748848162/'>
+                    <h3 class='name2'>Third Member</h3>
+                    <p class='name2'>Ehab Ahmad</p>
+                    <a
+                      class='anker2'
+                      href='https://www.linkedin.com/in/ehab-ahmad-748848162/'
+                    >
                       Profile
                     </a>
                   </div>
@@ -101,21 +110,22 @@ export default class AboutUsGrid extends Component {
               </div>
             </Col>
             <Col md={{ span: 4, offset: 0 }}>
-              <div class='card'>
-                <div class='box'>
-                  <div class='content'>
-                    <i class='fab fa-java'></i>
+              <div class='card2'>
+                <div class='box2'>
+                  <div style={{ width: 400 }} class='content2'>
                     <Image
                       className='d-block w-100'
-                      style={{ width: 500 }}
                       src={AhmadImage}
                       alt='RoadService'
                       fluid
                       rounded
                     />
-                    <h3>Fourth Member</h3>
-                    <p>Ahmad AbuTaifor</p>
-                    <a href='https://www.linkedin.com/mwlite/in/ahmad-abuteifor-465647216'>
+                    <h3 class='name2'>Fourth Member</h3>
+                    <p class='name2'>Ahmad AbuTaifor</p>
+                    <a
+                      class='anker2'
+                      href='https://www.linkedin.com/mwlite/in/ahmad-abuteifor-465647216'
+                    >
                       Profile
                     </a>
                   </div>
@@ -123,21 +133,22 @@ export default class AboutUsGrid extends Component {
               </div>
             </Col>
             <Col md={{ span: 4, offset: 0 }}>
-              <div class='card'>
-                <div class='box'>
-                  <div class='content'>
-                    <i class='fab fa-java'></i>
+              <div class='card2'>
+                <div class='box2'>
+                  <div style={{ width: 400 }} class='content2'>
                     <Image
                       className='d-block w-100'
-                      style={{ width: 500 }}
                       src={GharamImage}
                       alt='RoadService'
                       fluid
                       rounded
                     />
-                    <h3>Fifth Member</h3>
-                    <p>Gharam</p>
-                    <a href='https://www.linkedin.com/in/gharam-alessa-4449901b9/'>
+                    <h3 class='name2'>Fifth Member</h3>
+                    <p class='name2'>Gharam</p>
+                    <a
+                      class='anker2'
+                      href='https://www.linkedin.com/in/gharam-alessa-4449901b9/'
+                    >
                       Profile
                     </a>
                   </div>

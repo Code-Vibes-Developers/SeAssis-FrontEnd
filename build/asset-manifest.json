@@ -1,17 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.8dac517e.chunk.css",
-    "main.js": "/static/js/main.404cba25.chunk.js",
-    "main.js.map": "/static/js/main.404cba25.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.6c75f6c5.js",
-    "runtime-main.js.map": "/static/js/runtime-main.6c75f6c5.js.map",
-    "static/js/2.bded708e.chunk.js": "/static/js/2.bded708e.chunk.js",
-    "static/js/2.bded708e.chunk.js.map": "/static/js/2.bded708e.chunk.js.map",
-    "static/js/3.e7230f43.chunk.js": "/static/js/3.e7230f43.chunk.js",
-    "static/js/3.e7230f43.chunk.js.map": "/static/js/3.e7230f43.chunk.js.map",
+    "main.css": "/static/css/main.111a2d7b.chunk.css",
+    "main.js": "/static/js/main.6a1db11e.chunk.js",
+    "main.js.map": "/static/js/main.6a1db11e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.abd26f35.js",
+    "runtime-main.js.map": "/static/js/runtime-main.abd26f35.js.map",
+    "static/css/2.818011ed.chunk.css": "/static/css/2.818011ed.chunk.css",
+    "static/js/2.2c3632ff.chunk.js": "/static/js/2.2c3632ff.chunk.js",
+    "static/js/2.2c3632ff.chunk.js.map": "/static/js/2.2c3632ff.chunk.js.map",
+    "static/js/3.770e7d16.chunk.js": "/static/js/3.770e7d16.chunk.js",
+    "static/js/3.770e7d16.chunk.js.map": "/static/js/3.770e7d16.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.8dac517e.chunk.css.map": "/static/css/main.8dac517e.chunk.css.map",
-    "static/js/2.bded708e.chunk.js.LICENSE.txt": "/static/js/2.bded708e.chunk.js.LICENSE.txt",
+    "static/css/2.818011ed.chunk.css.map": "/static/css/2.818011ed.chunk.css.map",
+    "static/css/main.111a2d7b.chunk.css.map": "/static/css/main.111a2d7b.chunk.css.map",
+    "static/js/2.2c3632ff.chunk.js.LICENSE.txt": "/static/js/2.2c3632ff.chunk.js.LICENSE.txt",
+    "static/media/HomeGrid1.65f4860f.jpg": "/static/media/HomeGrid1.65f4860f.jpg",
+    "static/media/HomeGrid2.1461ad7c.jpg": "/static/media/HomeGrid2.1461ad7c.jpg",
+    "static/media/HomeSlider1.56e4d4ca.jpg": "/static/media/HomeSlider1.56e4d4ca.jpg",
+    "static/media/HomeSlider2.c14ba622.jpg": "/static/media/HomeSlider2.c14ba622.jpg",
     "static/media/ahmad.d499a48b.jpg": "/static/media/ahmad.d499a48b.jpg",
     "static/media/ehab.b90a6c4f.jpg": "/static/media/ehab.b90a6c4f.jpg",
     "static/media/gharam.90c2e3bc.jpg": "/static/media/gharam.90c2e3bc.jpg",
@@ -20,9 +26,10 @@
     "static/media/team.936a41fb.jpg": "/static/media/team.936a41fb.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.6c75f6c5.js",
-    "static/js/2.bded708e.chunk.js",
-    "static/css/main.8dac517e.chunk.css",
-    "static/js/main.404cba25.chunk.js"
+    "static/js/runtime-main.abd26f35.js",
+    "static/css/2.818011ed.chunk.css",
+    "static/js/2.2c3632ff.chunk.js",
+    "static/css/main.111a2d7b.chunk.css",
+    "static/js/main.6a1db11e.chunk.js"
   ]
 }
